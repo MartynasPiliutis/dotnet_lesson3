@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    class Human
+    {
+        public string Name;
+    }
     class Program
     {
         static void Main(string[] args)
@@ -37,7 +41,20 @@ namespace ConsoleApp1
             Console.WriteLine("{0} = {1} : {2}", skaicius1, skaicius2, skaicius1 == skaicius2);
             Console.ReadLine();
 
+            //Example3
+            Human human1 = new Human();
+            human1.Name = "Batman";
 
+            Human human2 = human1;
+
+            Console.WriteLine("human1.Name: " + human1.Name);
+            Console.WriteLine("human2.Name: " + human2.Name);
+
+            human1.Name = "Joker";
+            Console.WriteLine("human1.Name: " + human1.Name);
+            Console.WriteLine("human2.Name: " + human2.Name);
+
+            Console.ReadLine();
         }
     }
 }
