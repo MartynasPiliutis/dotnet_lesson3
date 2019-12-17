@@ -10,7 +10,7 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            //Example1
+            /*//Example1
             Console.Write("Iveskite grupes pavadinima: ");
             string grupesPavadinimas = Console.ReadLine();
 
@@ -38,8 +38,64 @@ namespace ConsoleApp4
             else
                 Console.WriteLine("{0} - nera trispalves spalva", spalva);
 
-            Console.ReadLine();
+            Console.ReadLine();*/
 
+            //Task1
+
+            int grupesSkaicius;
+            int salyga = 0;
+
+            Console.Write("Iveskite grupes nariu skaiciu: ");
+            grupesSkaicius = 0;
+
+            if (!int.TryParse(Console.ReadLine(), out grupesSkaicius))
+            {
+                Console.WriteLine("Ivesta neteisinga reiksme");
+                Console.WriteLine("Spauskite [ENTER]");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+
+            if (grupesSkaicius == 1)
+            {
+                salyga = 1;
+            }
+            else if (grupesSkaicius == 2)
+            {
+                salyga = 2;
+            }
+            else if (grupesSkaicius > 2 && grupesSkaicius <= 10)
+            {
+                salyga = 3;
+            }
+            else if (grupesSkaicius > 10)
+            {
+                salyga = 4;
+            }
+            else
+            {
+                Console.WriteLine("Ivesta neteisinga reiksme");
+                Console.WriteLine("Spauskite [ENTER]");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+            switch (salyga)
+            {
+                case 1:
+                    Console.WriteLine("Tai solistas");
+                    break;
+                case 2:
+                    Console.WriteLine("Tai duetas");
+                    break;
+                case 3:
+                    Console.WriteLine("Tai ansamblis");
+                    break;
+                case 4:
+                    Console.WriteLine("Tai orkestras");
+                    break;
+            }
+            Console.WriteLine("Spauskite [ENTER]");
+            Console.ReadLine();
         }
     }
 }
