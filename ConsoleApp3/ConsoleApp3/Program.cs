@@ -28,6 +28,21 @@ namespace ConsoleApp3
             Console.WriteLine("{2} {1} {0}", letter1, letter2, letter3);
             Console.ReadLine();
 
+            //Task2
+
+            double atstumas;
+            double laikas;
+            double greitis;
+
+            Console.Write("Iveskite atstuma metrais: ");
+            atstumas = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Iveskite laika sekundemis: ");
+            laikas = Convert.ToDouble(Console.ReadLine());
+
+            greitis = atstumas / laikas * 3.6;
+
+            Console.WriteLine("Jusu greitis yra {0} km/h", greitis);
+            Console.ReadLine();
 
         }
     }
