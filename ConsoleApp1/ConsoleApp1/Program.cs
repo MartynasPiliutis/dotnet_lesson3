@@ -10,6 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Example1
             float skaiciusFloat = 1f / 3;
             double skaiciusDouble = 1d / 3;
 
@@ -22,6 +23,8 @@ namespace ConsoleApp1
                 Console.WriteLine("skaiciusFloat {0} NERA skaiciusDouble {1}", skaiciusFloat, skaiciusDouble);
             }
             Console.ReadLine();
+
+
         }
     }
 }
