@@ -44,6 +44,21 @@ namespace ConsoleApp3
             Console.WriteLine("Jusu greitis yra {0} km/h", greitis);
             Console.ReadLine();
 
+            //Task3
+
+            double r;
+            double plotas;
+            double turis;
+
+            Console.Write("Iveskite rutulio skersmeni: ");
+            r = Convert.ToDouble(Console.ReadLine()) / 2;
+
+            plotas = Math.PI * r * r;
+            turis = 3 * Math.PI / 4 * r * r * r;
+
+            Console.WriteLine("Plotas: {0}", plotas);
+            Console.WriteLine("turis: {0}", turis);
+            Console.ReadLine();
         }
     }
 }
